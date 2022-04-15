@@ -1,0 +1,9 @@
+#Esto impide que se pueda ver el contenido de una carpeta cunado no tiene index 
+Options All -Indexes
+
+#Redirección permanente de dominio www a sin www
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
