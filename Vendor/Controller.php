@@ -3,7 +3,7 @@
     class Controller{
         public function __construct(){
             $this->view = new View();
-            $this->loadModel();
+            $this->loadModel();                     
         }
 
         public function loadModel()
@@ -14,6 +14,9 @@
             require_once("./Models/{$class}.php");  
             $this->model = new $class();
         }
+
+        
+
     } 
     
 
