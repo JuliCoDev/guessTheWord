@@ -7,7 +7,13 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Bienvenido</h1>
-    <a href="./play">PLAY</a>
+    
+    <div>   
+        <h1>Welcome</h1>
+        <div id='rules'>
+
+        </div>
+    </div>        
+    
 </body>
 </html>
